@@ -1,14 +1,3 @@
-/*
-const menuToggler = document.querySelector('.menu-toggler');
-const topNav = document.querySelector('.top-nav');
-menuToggler.addEventListener('click', () => {
-    topNav.classList.toggle('change');
-})
-*/
-
-
-
-
 $(document).ready(function() {
     $('.menu-toggler').on('click', function() {
         $(this).toggleClass('change');
@@ -16,11 +5,11 @@ $(document).ready(function() {
     });
 
     $('.top-nav .nav-link').on('click', function() {
-        $('.menu-toggler').toggleClass('change');
-        $('.top-nav').toggleClass('change');
+        $('.menu-toggler').removeClass('change');
+        $('.top-nav').removeClass('change');
     });
 
-    $('nav a[href*="#"]').on('click', function() {
+    $('nav a[href*="#"').on('click', function() {
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top
         }, 1000);
@@ -31,4 +20,10 @@ $(document).ready(function() {
             scrollTop: 0
         }, 800);
     });
+
+    AOS.init({
+        easing: 'ease',
+        duration: 1800,
+        once: true
+    })
 });
