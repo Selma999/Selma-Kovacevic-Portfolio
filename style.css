@@ -358,7 +358,7 @@ input[type="submit"]:hover {
 }
 
 .copyright {
-    background-color: #16162d;
+    background-color: rgba(0, 0, 0, 0.05);
     position: relative;
     width: 100%;
     text-align: center;
@@ -470,6 +470,9 @@ input[type="submit"]:hover {
     }
     .nav-link {
         font-size: 3.5rem;
+    }
+    .list {
+        flex-direction: column;
     }
     .about .container {
         flex-direction: column;
