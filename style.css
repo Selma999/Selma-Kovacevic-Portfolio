@@ -45,7 +45,7 @@ header {
 }
 
 .top-nav {
-    background-color: rgba(165, 125, 228, 0.5);
+    background-color: rgba(165, 125, 228, 0.7);
     border-bottom-right-radius: 95%;
     border-bottom-left-radius: 95%;
     height: 100vh;
@@ -418,6 +418,7 @@ input[type="submit"]:hover {
         font-size: 7rem;
     }
     .list {
+        display: flex;
         flex-direction: column;
     }
     .li {
@@ -432,7 +433,7 @@ input[type="submit"]:hover {
     .section-heading h1 {
         font-size: 3rem;
     }
-    .about-details .nav-list {
+    .about-details {
         flex-direction: initial;
     }
     .about-details li {
@@ -456,7 +457,7 @@ input[type="submit"]:hover {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
 
     .menu-toggler {
         top: 2rem;
@@ -472,6 +473,7 @@ input[type="submit"]:hover {
         font-size: 3.5rem;
     }
     .list {
+        display: flex;
         flex-direction: column;
     }
     .about .container {
