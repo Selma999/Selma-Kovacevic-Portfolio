@@ -4,14 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
-            Selma Kovacevic | Portfolio
+            Selma Kovačević | Portfolio
         </title>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header id="home">
             <nav class="top-nav">
                 <div class="menu-toggler">
                     <div class="bar start"></div>
@@ -19,7 +21,7 @@
                     <div class="bar end"></div>
                 </div>
                 <ul class="list">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#experience" class="nav-link">Experience</a></li>
                     <li><a href="#education" class="nav-link">Education</a></li>
@@ -27,9 +29,10 @@
                 </ul>
             </nav>
             <div class="text"> 
-                <h1>Selma Kovacevic</h1>
-                <h6>Bachelor of Experimental Physics</h6>
+                <h1>Selma Kovačević</h1>
+                <h4>Bachelor of Experimental Physics</h4>
             </div>
+            <div class="nav-overlay"></div>
         </header>
 
         <section class="about" id="about">
@@ -44,26 +47,32 @@
                         <h1>About</h1>
                     </div>
                     <p class="about-text">
-                        My name is Selma Kovacevic. I was born in Heilbronn, 
+                        My name is Selma Kovačević. I was born in Heilbronn, 
                         Germany. After moving back to Bosnia and Herezegovina, 
                         I started elementary school in a small, yet breathtaking town, 
-                        in the north of B&H, Bosanska Krupa. I graduated from Gymnasium. 
+                        in the north of B&H, Bosanska Krupa. I graduated from Gymnasium, after which I moved
+                        to Sarajevo to start my studies. 
                         I have earned my Bachelor's in Physics at Faculty of Science, University of 
-                        Sarajevo.
+                        Sarajevo and currently I'm finishing my Master's in Physics.
                         
                     <p class="about-text">
-                         My love for physics started back in childhood, but while 
-                        studying I realized how much fun I had with programming and how 
-                        everything depends on it nowadays. Moreover, aside of my diploma, physics 
-                        gave me much more, for one, the love and passion for programming. </p>
-                    <p class="about-text">
-                        I have to admit that I've always had a passion for design, so after realizing 
-                        that as a developer I have the chance to combine engineering, physics and design, 
-                        I've decided to change my career path. </p>
+                         My love for physics started back in childhood, through Enciklopedia and its vivid and 
+                         colorful photographs about Universe and Planets, which came along very good with my analitical 
+                         thinking and research spirit. A while back down the road, at my 
+                         4th year of studies, I learned more about programming and it gave me a new side of physics,
+                         explained through simulations, codes and matrices. It was a hole new dimension since then,
+                         which got me interested in machine learning and artificial intelligence and its connection to physics.
+                         Thus far, aside of my diploma, physics 
+                         gave me much more, the love and passion for programming, curiosity and wilingness to learn new 
+                         technologies as well as the will and goal to strive for excellence and innovation in the field 
+                         of physics, programming, and of course, ML and AI.
+                     </p>
+                    <!--<p class="about-text">
+                         </p>
                     <p class="about-text">   
                         Programming gives me the best possible combination of all of my 
                         desired career fields, thus I can say for myself I'm an aspiring software developer.
-                    </p>
+                    </p>-->
                 
                     <div class="social-media">
                         <ul class="list">
@@ -95,6 +104,13 @@
                 </div>
                 <div class="timeline">
                     <ul>
+                        <li class="date" data-date="08/2020 - ">
+                            <h1>Intern</h1>
+                            <p>Sarajevo, Bosnia and Herzegovina</p>
+                            <p>Mentor: Babić Mirhat, Software Developer and CEO at Altum.</p>
+                            <p> You can find more information under the following link:</p>
+                            <p>https://www.linkedin.com/in/mirhat-babi%C4%87-63540475/</p>
+                         </li>
                         <li class="date" data-date="2015 - 2016">
                            <h1>Salesperson in a sports store</h1>
                            <p>Sarajevo, Bosnia and Herzegovina</p>
@@ -124,6 +140,10 @@
                  </div>
                  <div class="timeline">
                      <ul>
+                        <li class="date" data-date="2020 - ">
+                            <h1>Master of Physics</h1>
+                            <p>University of Sarajevo, Faculty of Science, Sarajevo, Bosnia and Herzegovina</p>
+                         </li>
                          <li class="date" data-date="2014 - 2019">
                             <h1>Bachelor of Physics</h1>
                             <p>University of Sarajevo, Faculty of Science, Sarajevo, Bosnia and Herzegovina</p>
